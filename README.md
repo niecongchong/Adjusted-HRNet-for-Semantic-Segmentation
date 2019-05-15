@@ -9,7 +9,7 @@ Keras——适用于语义分割的改编的HRNet！
 
 ## 网络结构
 
-![pose_hrnet](C:\Users\CV\Documents\GitHub\Adjusted-HRNet-for-Semantic-Segmentation\pose_hrnet.png)
+![pose_hrnet](/pose_hrnet.png)
 
 # 2. seg_hrnet
 
@@ -17,7 +17,7 @@ pose_hrnet最终产生的分辨率为原来的四分之一，seg_hrnet相比于p
 
 ## 网络结构
 
-![seg_hrnet](C:\Users\CV\Documents\GitHub\Adjusted-HRNet-for-Semantic-Segmentation\seg_hrnet.png)
+![seg_hrnet](/seg_hrnet.png)
 
 # 3. seg_se_hrnet
 
@@ -25,7 +25,7 @@ seg_se_hrnet是在seg_hrnet的基础上添加了SE block模块，也就是在每
 
 ## 网络结构
 
-![seg_se_hrnet](C:\Users\CV\Documents\GitHub\Adjusted-HRNet-for-Semantic-Segmentation\seg_se_hrnet.png)
+![seg_se_hrnet](/seg_se_hrnet.png)
 
 # 4. seg_fc_hrnet
 
@@ -33,4 +33,4 @@ HRNet更一般的版本，分支更多，最小分辨率为4x4，并且去掉了
 
 ## 网络结构
 
-![seg_fc_hrnet](C:\Users\CV\Documents\GitHub\Adjusted-HRNet-for-Semantic-Segmentation\seg_fc_hrnet.png)
+![seg_fc_hrnet](/seg_fc_hrnet.png)
