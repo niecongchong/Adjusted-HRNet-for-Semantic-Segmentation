@@ -34,3 +34,7 @@ HRNet更一般的版本，分支更多，最小分辨率为4x4，并且去掉了
 ## 网络结构
 
 ![seg_fc_hrnet](/seg_fc_hrnet.png)
+
+# 4. seg_fc_hrnet_avgpooling
+
+与seg_fc_hrnet相比，将transform_layer和每次融合时的下采样方法都从HRNet的二倍二倍步长卷积下采样转换为一步平均池化，其对于fc这种超多分支的结构能减少不少参数。
