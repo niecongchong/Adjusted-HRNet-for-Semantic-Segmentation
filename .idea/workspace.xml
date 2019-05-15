@@ -14,13 +14,25 @@
       <content type="file-editors">
         <state>
           <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-            <file leaf-file-name="FC.py" pinned="false" current-in-tab="true">
+            <file leaf-file-name="FC.py" pinned="false" current-in-tab="false">
               <entry file="file://F:/GRADUATION/experimental_code/vaihingen/pixel-value/FC.py">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="853">
+                  <state relative-caret-position="1530">
                     <caret line="56" column="19" selection-start-line="56" selection-start-column="19" selection-end-line="56" selection-end-column="19" />
                     <folding>
                       <element signature="e#0#35#0" expanded="true" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file leaf-file-name="pose_hrnet.py" pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/pose_hrnet.py">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="-4307">
+                    <caret line="107" column="26" lean-forward="true" selection-start-line="107" selection-start-column="26" selection-end-line="107" selection-end-column="26" />
+                    <folding>
+                      <element signature="e#0#25#0" expanded="true" />
                     </folding>
                   </state>
                 </provider>
@@ -33,23 +45,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="seg_fc_hrnet.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="seg_fc_hrnet.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/seg_fc_hrnet.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="111" column="30" selection-start-line="111" selection-start-column="30" selection-end-line="111" selection-end-column="30" />
+            <state relative-caret-position="-1113">
+              <caret line="79" column="12" lean-forward="true" selection-start-line="79" selection-start-column="12" selection-end-line="79" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="seg_fc_hrnet_avgpooling.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/seg_fc_hrnet_avgpooling.py">
+      <file leaf-file-name="seg_se_hrnet.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/seg_se_hrnet.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1890">
-              <caret selection-end-line="141" selection-end-column="16" />
-              <folding>
-                <element signature="e#0#25#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="267">
+              <caret line="299" column="34" lean-forward="true" selection-start-line="299" selection-start-column="34" selection-end-line="299" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -72,14 +81,14 @@
         <option value="$PROJECT_DIR$/seg_hrnet.py" />
         <option value="$PROJECT_DIR$/fc_hrnet.py" />
         <option value="$PROJECT_DIR$/seg_se_hrnet.py" />
-        <option value="$PROJECT_DIR$/seg_fc_hrnet.py" />
         <option value="$PROJECT_DIR$/seg_fc_hrnet_avgpooling.py" />
+        <option value="$PROJECT_DIR$/seg_fc_hrnet.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1912" />
-    <option name="y" value="-8" />
+    <option name="x" value="4" />
+    <option name="y" value="35" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
@@ -88,6 +97,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -99,7 +109,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -224,9 +233,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24973656" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24973656" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.4274809" />
@@ -249,6 +259,23 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/seg_fc_hrnet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3330">
+          <caret line="111" column="30" selection-start-line="111" selection-start-column="30" selection-end-line="111" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seg_fc_hrnet_avgpooling.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="141" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/seg_hrnet.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="8610">
@@ -302,15 +329,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="143" column="73" selection-start-line="143" selection-start-column="8" selection-end-line="143" selection-end-column="73" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pose_hrnet.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://E:/Semantic-Segmentation/tgars/EXPERIMENTS/22.irrg_fc_hrnet/train/irrg_se_hrnet.ipynb" />
     <entry file="file://F:/GRADUATION/experimental_code/vaihingen/pixel-value/FC.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="853">
+        <state relative-caret-position="1530">
           <caret line="56" column="19" selection-start-line="56" selection-start-column="19" selection-end-line="56" selection-end-column="19" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
@@ -318,54 +346,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/seg_hrnet.py">
+    <entry file="file://$PROJECT_DIR$/seg_fc_hrnet_avgpooling.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="259" column="55" selection-start-line="256" selection-start-column="4" selection-end-line="259" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pose_hrnet.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pose_hrnet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="293" selection-start-line="293" selection-end-line="296" selection-end-column="79" />
+        <state>
+          <caret selection-end-line="141" selection-end-column="16" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pose_hrnet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4307">
+          <caret line="107" column="26" lean-forward="true" selection-start-line="107" selection-start-column="26" selection-end-line="107" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seg_hrnet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="260" column="12" lean-forward="true" selection-start-line="260" selection-start-column="12" selection-end-line="260" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/seg_se_hrnet.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10170">
-          <caret line="345" column="29" selection-start-line="345" selection-start-column="29" selection-end-line="345" selection-end-column="29" />
+        <state relative-caret-position="267">
+          <caret line="299" column="34" lean-forward="true" selection-start-line="299" selection-start-column="34" selection-end-line="299" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/seg_fc_hrnet.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="111" column="30" selection-start-line="111" selection-start-column="30" selection-end-line="111" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/Semantic-Segmentation/tgars/EXPERIMENTS/22.irrg_fc_hrnet/train/irrg_se_hrnet.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/seg_fc_hrnet_avgpooling.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1890">
-          <caret selection-end-line="141" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-1113">
+          <caret line="79" column="12" lean-forward="true" selection-start-line="79" selection-start-column="12" selection-end-line="79" selection-end-column="12" />
         </state>
       </provider>
     </entry>

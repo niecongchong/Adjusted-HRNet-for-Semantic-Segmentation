@@ -74,9 +74,9 @@ def _make_transition_layer(x, out_filters_list=[32, 64, 96, 128, 160, 192, 224, 
 
 def make_branch(x, out_filters=32):
     x = basic_Block(x, out_filters, with_conv_shortcut=False)
-    x = basic_Block(x, out_filters, with_conv_shortcut=False)
-    x = basic_Block(x, out_filters, with_conv_shortcut=False)
-    x = basic_Block(x, out_filters, with_conv_shortcut=False)
+    # x = basic_Block(x, out_filters, with_conv_shortcut=False)
+    # x = basic_Block(x, out_filters, with_conv_shortcut=False)
+    # x = basic_Block(x, out_filters, with_conv_shortcut=False)
     return x
 
 
@@ -116,7 +116,7 @@ def _make_fuse_layers(x, num_branches, out_filters_list=[32, 64, 96, 128, 160, 1
 def seg_fc_hrnet(height=512, width=512, channel=3, classes=6):
     inputs = Input(shape=(height, width, channel))
 
-    out_filters_list = [32, 32, 32, 32, 32, 32, 32, 32]
+    out_filters_list = [32, 64, 96, 128, 160, 192, 224, 256]
     x = _make_transition_layer(inputs, out_filters_list=out_filters_list)
 
     x1 = []
@@ -127,17 +127,17 @@ def seg_fc_hrnet(height=512, width=512, channel=3, classes=6):
                            out_filters_list=out_filters_list,
                            multi_scale_output=True)
 
-    # x2 = []
-    # for i in range(len(out_filters_list)):
-    #     x2.append(make_branch(x1[i], out_filters=out_filters_list[i]))
-    #
-    # x2 = _make_fuse_layers(x2, len(out_filters_list),
-    #                        out_filters_list=out_filters_list,
-    #                        multi_scale_output=True)
+    x2 = []
+    for i in range(len(out_filters_list)):
+        x2.append(make_branch(x1[i], out_filters=out_filters_list[i]))
+
+    x2 = _make_fuse_layers(x2, len(out_filters_list),
+                           out_filters_list=out_filters_list,
+                           multi_scale_output=True)
 
     x3 = []
     for i in range(len(out_filters_list)):
-        x3.append(make_branch(x1[i], out_filters=out_filters_list[i]))
+        x3.append(make_branch(x2[i], out_filters=out_filters_list[i]))
 
     x3 = _make_fuse_layers(x3, len(out_filters_list),
                            out_filters_list=out_filters_list,
@@ -150,12 +150,3 @@ def seg_fc_hrnet(height=512, width=512, channel=3, classes=6):
     model = Model(inputs=inputs, outputs=out)
 
     return model
-
-
-model = seg_fc_hrnet(height=512, width=512, channel=3, classes=6)
-model.summary()
-
-from keras.utils import plot_model
-import os
-os.environ["PATH"] += os.pathsep + 'C:/Program Files (x86)/Graphviz2.38/bin/'
-plot_model(model, to_file='seg_fc_hrnet.png', show_shapes=True, show_layer_names=True)
